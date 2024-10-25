@@ -1,0 +1,88 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.nanbar {
+    width: 100%;
+    background-color: rgb(67, 150, 223);
+    padding: 10px 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-title {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.link {
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+.link a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.link a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
+
+.abcd {
+    text-align: center;
+    margin-top: 50px; /* Space above welcome message */
+}
+
+.abcd h1 {
+    font-size: 32px;
+    color: rgb(45, 4, 68);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column; /* Stack links on smaller screens */
+        align-items: flex-start;
+    }
+
+    .link {
+        flex-direction: column; /* Stack links */
+        gap: 10px;
+    }
+
+    .navbar-title {
+        padding: 10px 0;
+    }
+
+    .link a {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    .abcd h1 {
+        font-size: 28px; /* Smaller text on mobile */
+    }
+}
